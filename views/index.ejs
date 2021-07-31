@@ -29,20 +29,16 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="row align-items-md-stretch text-center">
+                <div class="row text-center col">
 
-                    <div class="h-100 p-5 text-black rounded-3">
-                        <% if(counter) { %>
-                            <h2>
-                                <%= counter %> passwords have been generated</h2>
-                            <%}%>
-                                <% if (pwd) { %>
-                                    <h2>
-                                        <%= pwd %>
-                                    </h2>
-                                    <% } else { %>
-                                        <h2>Generate a password</h2>
-                                        <% } %>
+                    <div class="h-100 p-5 text-black d-inline-block text-justify text-break rounded-3">
+                        <% if (pwd) { %>
+                            <p>
+                                <%= pwd %>
+                            </p>
+                            <% } else { %>
+                                <h2>Generate a password</h2>
+                                <% } %>
                     </div>
                 </div>
             </div>
